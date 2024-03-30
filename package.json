@@ -1,0 +1,10 @@
+{
+  "name": "kawaiiticker",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "css:build": "echo \"TODO\""
+  },
+  "author": "Mia Rose Winter",
+  "license": "MIT"
+}
