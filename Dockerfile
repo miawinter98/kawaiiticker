@@ -1,9 +1,11 @@
 ARG BASE=8.0
 
 FROM --platform=$BUILDPLATFORM mcr.microsoft.com/dotnet/aspnet:$BASE AS base
+RUN mkdir -p /data && chown app /data
 USER app
 WORKDIR /app
 EXPOSE 8080
+VOLUME /data
 HEALTHCHECK --start-period=5s --start-interval=15s --interval=30s --timeout=30s --retries=3 \
     CMD curl --fail http://localhost:8080/health || exit 1
 

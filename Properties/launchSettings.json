@@ -17,7 +17,8 @@
       },
       "publishAllPorts": true,
       "useSSL": false,
-      "httpPort": 80
+      "httpPort": 80,
+      "DockerfileRunArguments": "-v kawaiiticker_data:/data"
     }
   },
   "$schema": "http://json.schemastore.org/launchsettings.json",
